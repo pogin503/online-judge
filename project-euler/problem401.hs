@@ -8,4 +8,7 @@ sigma2 n = sum $ (map (^2) (f1 n)) ++ [n^2]
 -- >>>sigma2 6
 -- 50
 
-main = undefined
+main = undefined 
+--  do
+--    print $ f1 10
+--    print $ sigma2 6
