@@ -1,5 +1,6 @@
-
+main :: IO ()
 main = putStrLn $ show $ last $ take 10001 primes'
+-- 104743
 
 primes' :: [Integer]
 primes' = 2:sieve' [3] [5,7..]
