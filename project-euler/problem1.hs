@@ -1,7 +1,5 @@
-import Debug.Trace
+-- import Debug.Trace
 
-
--- dbg = trace (show )
 problem_1 :: Int
 problem_1 =
     -- let dbg = trace (show x) in
@@ -14,3 +12,8 @@ problem_1_1 :: Int
 problem_1_1 = sumStep 3 999 + sumStep 5 999 - sumStep 15 999
               where
                 sumStep s n = s * sum0netoN (n `div` s)
+
+main :: IO ()
+main = do
+  print problem_1
+  print problem_1_1

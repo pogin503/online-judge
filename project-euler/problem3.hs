@@ -12,4 +12,9 @@ sisu  x factor counter  =
     if mod x factor == 0
     then trace ("counter = " ++ show counter
                 ++ "res =" ++ show (mod x factor)) sisu (div x factor) factor (counter + 1)
-    else (toInteger counter) + 1
+    else toInteger counter + 1
+
+main :: IO ()
+main = do
+  let str = "123"
+  print str
